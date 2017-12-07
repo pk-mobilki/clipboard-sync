@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Clipboard Sync</string>
+
+    <!--Main Activity-->
+    <string name="empty_history_message">Historia jest pusta. Skopiuj coś do schowka</string>
+    <string name="pc_is_not_selected">Komputer nie został wybrany. Wybierz go w zakładce Ustawienia</string>
+
+    <!--Settings Activity-->
+    <string name="action_settings">Ustawienia</string>
+    <string name="actions_about">O aplikacji</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="pref_header_general">Ogólne</string>
+    <string name="server_ip_default"></string>
+    <string name="server_port_default"></string>
+    <string name="pref_header_notifications">Powiadomienia</string>
+    <string name="notifications_summary">Po skopiowaniu tekstu zostanie wyświetlone powiadomienie</string>
+    <string name="clear_database">Wyczyść historię</string>
+    <string name="settings_category_connection">Połączenie</string>
+    <string name="settings_category_history">Historia</string>
+    <string name="search_PC">Automatycznie wyszukaj komputer</string>
+    <string name="not_connected_to_wifi">Brak połączenia Wi-Fi</string>
+    <string name="no_pc_found">Nie znaleziono komputera</string>
+    <string name="pc_found">Komputer znaleziony</string>
+    <string name="scanning">Skanowanie. Proszę czekać…</string>
+    <string name="pref_server_IP">Adres IP serwera</string>
+    <string name="pref_server_port">Port serwera</string>
+    <string name="pref_send_notifications">Wysyłaj powiadomienia</string>
+
+    <!--Details Activity-->
+    <string name="details">Aplikacja Open Source która pozwala na uostępnianie schowka między urządzeniami poprzez Wi-Fi</string>
+    <string name="authors">Autorzy:\n\tPrzemysław Szurek\n\tMonika Nowak\n\tBartosz Stojewski\n\tMateusz Najbor\n\tPaweł Muszyński</string>
+    <string name="github_details">Kod źródłowy znajduję się na: </string>
+    <string name="github_link">https://github.com/pk-mobilki/clipboard-sync</string>
+
+    <!--Util-->
+    <string name="are_you_sure">Czy na pewno?</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+
+</resources>

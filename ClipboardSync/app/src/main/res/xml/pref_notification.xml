@@ -2,7 +2,7 @@
 
 <SwitchPreference
         android:key="notifications_clipboard"
-        android:title="Send notifications"
+        android:title="@string/pref_send_notifications"
         android:defaultValue="true"/>
 
 </PreferenceScreen>
