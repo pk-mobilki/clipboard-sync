@@ -33,14 +33,12 @@ public class NetworkReceiver extends BroadcastReceiver
                 SenderTask task = new SenderTask();
                 task.execute(serverIp, serverPort, message);
             }
-            catch (Exception E)
+            catch (Exception e)
             {
-
             }
         }
         else
         {
-            Toast.makeText( context, "NO YAY", Toast.LENGTH_SHORT).show();
         }
     }
 }
