@@ -1,4 +1,4 @@
-package pl.edu.pk.mobilki.clipboardsync.activities.model;
+package pl.edu.pk.mobilki.clipboardsync.model;
 
 
 /**

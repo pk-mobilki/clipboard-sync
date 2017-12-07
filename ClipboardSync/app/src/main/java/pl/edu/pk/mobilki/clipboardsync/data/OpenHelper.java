@@ -1,10 +1,10 @@
-package pl.edu.pk.mobilki.clipboardsync.activities.data;
+package pl.edu.pk.mobilki.clipboardsync.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import pl.edu.pk.mobilki.clipboardsync.activities.data.clipboard.ClipboardTabla;
+import pl.edu.pk.mobilki.clipboardsync.data.clipboard.ClipboardTabla;
 
 /**
  * Created by mati on 2017-12-04.

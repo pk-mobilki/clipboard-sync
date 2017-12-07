@@ -1,4 +1,4 @@
-package pl.edu.pk.mobilki.clipboardsync.activities.data;
+package pl.edu.pk.mobilki.clipboardsync.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

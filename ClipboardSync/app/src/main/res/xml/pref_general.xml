@@ -1,4 +1,39 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory
+            android:title="@string/settings_category_connection">
+    </PreferenceCategory>
+
+    <EditTextPreference
+            android:key="server_ip"
+            android:title="Server IP address"
+            android:defaultValue="@string/server_ip_default"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1"/>
+
+    <EditTextPreference
+            android:key="server_port"
+            android:title="Server port"
+            android:defaultValue="@string/server_port_default"
+            android:selectAllOnFocus="true"
+            android:inputType="numberDecimal"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Preference android:title="@string/search_PC"
+                android:key="search_PC"/>
+
+    <PreferenceCategory
+            android:title="@string/settings_category_history">
+    </PreferenceCategory>
+
+    <Preference android:title="@string/clear_database"
+                android:key="clear_database"/>
 
 </PreferenceScreen>

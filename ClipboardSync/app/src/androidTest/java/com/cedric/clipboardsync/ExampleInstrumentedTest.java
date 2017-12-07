@@ -1,4 +1,4 @@
-package pl.edu.pk.mobilki.clipboardsync;
+package com.cedric.clipboardsync;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -23,6 +23,6 @@ public class ExampleInstrumentedTest
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("pl.edu.pk.mobilki.clipboardsync", appContext.getPackageName());
+        assertEquals("com.cedric.clipboardsync", appContext.getPackageName());
     }
 }
