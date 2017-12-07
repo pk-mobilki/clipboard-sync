@@ -20,12 +20,16 @@
     <string name="search_PC">Search for PC automatically</string>
     <string name="not_connected_to_wifi">You are not connected to Wi-Fi</string>
     <string name="no_pc_found">No PC found</string>
+    <string name="pc_found">PC found</string>
     <string name="scanning">Scanning. Please wait…</string>
 
 
     <!--Details Activity-->
-    <string name="details_1">Details1</string>
-    <string name="details_2">Details 2</string>
+    <string name="details_1">Clipboard Sync</string>
+    <string name="details_2">An open source app that enables sharing clipboard between devices via Wi-Fi</string>
+    <string name="authors">Authors:\n\tPrzemysław Szurek\n\tMonika Nowak\n\tBartosz Stojewski\n\tMateusz Najbor\n\tPaweł Muszyński</string>
+    <string name="github_link">https://github.com/pk-mobilki/clipboard-sync</string>
+    <string name="github_details">Source code can be found at: </string>
 
     <!--Util-->
     <string name="are_you_sure">Are you sure?</string>

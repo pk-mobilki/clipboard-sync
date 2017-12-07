@@ -19,7 +19,7 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
-import com.cedric.clipboardsync.R;
+import  pl.edu.pk.mobilki.clipboardsync.R;
 import pl.edu.pk.mobilki.clipboardsync.database.ClipboardDbAdapter;
 import pl.edu.pk.mobilki.clipboardsync.sync.TcpClient;
 
@@ -160,7 +160,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 
                                             Log.e("MESSAGE", "Scanning: " + output);
 
-                                            if (TcpClient.isPortOpen(output, 40004, 20))
+                                            if (TcpClient.isPortOpen(output, 40004, 15))
                                             {
                                                 detectedServerIpAddress = output;
                                                 return null;
@@ -208,6 +208,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 
                                 EditTextPreference serverPortPreference = (EditTextPreference) findPreference("server_port");
                                 serverPortPreference.setSummary("40004");
+
+                                String NoPCFound = getResources().getString(R.string.pc_found) + ": " + detectedServerIpAddress;
+                                Toast.makeText( getContext(), NoPCFound, Toast.LENGTH_SHORT).show();
                             }
                             else
                             {

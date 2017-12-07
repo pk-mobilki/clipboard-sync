@@ -1,8 +1,8 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
-            android:key="notifications_clipboard"
-            android:title="Send notifications"
-            android:defaultValue="true"/>
+<SwitchPreference
+        android:key="notifications_clipboard"
+        android:title="Send notifications"
+        android:defaultValue="true"/>
 
 </PreferenceScreen>

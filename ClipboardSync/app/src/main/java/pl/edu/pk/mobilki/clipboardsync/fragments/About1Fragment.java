@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.cedric.clipboardsync.R;
+import  pl.edu.pk.mobilki.clipboardsync.R;
 
 public class About1Fragment extends Fragment
 {

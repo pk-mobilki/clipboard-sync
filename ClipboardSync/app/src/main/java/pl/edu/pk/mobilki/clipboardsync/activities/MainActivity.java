@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
-import com.cedric.clipboardsync.R;
+import pl.edu.pk.mobilki.clipboardsync.R;
 import pl.edu.pk.mobilki.clipboardsync.database.ClipboardDbAdapter;
 import pl.edu.pk.mobilki.clipboardsync.services.ClipboardChecker;
 
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity
         if (serverIp.isEmpty() || serverPort.isEmpty())
         {
             notConnectedText.setVisibility(View.VISIBLE);
-        }
-        else
+        } else
         {
             notConnectedText.setVisibility(View.GONE);
         }
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity
         ListView myListView = (ListView) this.findViewById(R.id.historyList);
         historyList = new ArrayList<String>();
 
-        TextView emptyText = (TextView)findViewById(R.id.list_empty_text);
+        TextView emptyText = (TextView) findViewById(R.id.list_empty_text);
         myListView.setEmptyView(emptyText);
 
         adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.list_black_text, historyList);
@@ -112,8 +111,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
             return true;
-        }
-        else if (id == R.id.action_about)
+        } else if (id == R.id.action_about)
         {
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
