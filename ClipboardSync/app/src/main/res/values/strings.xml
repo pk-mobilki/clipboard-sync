@@ -18,9 +18,9 @@
     <string name="settings_category_connection">Connection</string>
     <string name="settings_category_history">History</string>
     <string name="search_PC">Search for PC automatically</string>
-    <string name="not_connected_to_wifi">You are not connected to WiFi</string>
+    <string name="not_connected_to_wifi">You are not connected to Wi-Fi</string>
     <string name="no_pc_found">No PC found</string>
-    <string name="scanning">Scanninng. Please wait…</string>
+    <string name="scanning">Scanning. Please wait…</string>
 
 
     <!--Details Activity-->
