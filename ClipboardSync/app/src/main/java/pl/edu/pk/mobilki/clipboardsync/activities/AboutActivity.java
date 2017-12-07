@@ -2,7 +2,7 @@ package pl.edu.pk.mobilki.clipboardsync.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import pl.edu.pk.mobilki.clipboardsync.R;
+import com.cedric.clipboardsync.R;
 
 public class AboutActivity extends AppCompatActivity
 {

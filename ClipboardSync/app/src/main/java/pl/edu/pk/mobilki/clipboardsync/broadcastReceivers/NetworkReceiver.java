@@ -7,17 +7,21 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
 
-public class NetworkReceiver extends BroadcastReceiver {
-
+public class NetworkReceiver extends BroadcastReceiver
+{
     @Override
-    public void onReceive(Context context, Intent intent) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+    public void onReceive(Context context, Intent intent)
+    {
+        ConnectivityManager cm = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
 
-        if (activeNetwork != null && activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
-            Toast.makeText(context, "YAY", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(context, "NO YAY", Toast.LENGTH_SHORT).show();
+        if (activeNetwork != null && activeNetwork.getType() == ConnectivityManager.TYPE_WIFI)
+        {
+            Toast.makeText( context, "YAY", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText( context, "NO YAY", Toast.LENGTH_SHORT).show();
         }
     }
 }

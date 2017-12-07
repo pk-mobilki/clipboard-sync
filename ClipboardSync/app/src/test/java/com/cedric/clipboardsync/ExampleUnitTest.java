@@ -1,4 +1,4 @@
-package pl.edu.pk.mobilki.clipboardsync;
+package com.cedric.clipboardsync;
 
 import org.junit.Test;
 
