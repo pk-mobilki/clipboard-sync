@@ -61,6 +61,8 @@ public class TcpClient
         }
     }
 
+
+
     public void stopClient()
     {
         if (mBufferOut != null)

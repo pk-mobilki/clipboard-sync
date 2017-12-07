@@ -16,12 +16,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.*;
 import android.support.v7.app.AlertDialog;
+import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 import  pl.edu.pk.mobilki.clipboardsync.R;
 import pl.edu.pk.mobilki.clipboardsync.database.ClipboardDbAdapter;
 import pl.edu.pk.mobilki.clipboardsync.sync.TcpClient;
+import pl.edu.pk.mobilki.clipboardsync.tasks.SenderTask;
 
 import java.net.InetAddress;
 import java.util.List;
@@ -211,6 +213,21 @@ public class SettingsActivity extends AppCompatPreferenceActivity
 
                                 String NoPCFound = getResources().getString(R.string.pc_found) + ": " + detectedServerIpAddress;
                                 Toast.makeText( getContext(), NoPCFound, Toast.LENGTH_SHORT).show();
+
+                                String serverIp = prefs.getString("server_ip", "");
+                                String serverPort = prefs.getString("server_port", "");
+
+                                String message = "&INIT&" + Base64.encodeToString(android.os.Build.MODEL.getBytes(), Base64.NO_WRAP) + "&STOP&";
+
+                                try
+                                {
+                                    SenderTask task = new SenderTask();
+                                    task.execute(serverIp, serverPort, message);
+                                }
+                                catch (Exception e)
+                                {
+
+                                }
                             }
                             else
                             {
